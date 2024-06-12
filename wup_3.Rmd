@@ -24,13 +24,13 @@ $H_A$: The average number drinks is different between at least two rows.
 
 ## Methods 
 
+Average number of drinks (alcohol) is a numerical value    
+Seat choice is a categorical Value    
+ We used helper file Cat~Num    
 
 
 
-
-
-## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
-## you choose to sit in??
+## Our Goal is to answer this question Is there a difference between thealcohol consumed between the row  you choose to sit in??
 
 ## Now with ggplot - first select the basic data
 
