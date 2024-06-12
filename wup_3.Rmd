@@ -14,6 +14,21 @@ require(tidyverse)
 require(tigerstats)
 davisdata <- read.csv(file="UCDavis.csv")
 ```
+
+## Introduction 
+
+$H_0$:  There is no difference between the average number of drinks imbibed between people conditioned on the row they sit in.   
+
+$H_A$: The average number drinks is different between at least two rows.   
+
+
+## Methods 
+
+
+
+
+
+
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
 ## you choose to sit in??
 
