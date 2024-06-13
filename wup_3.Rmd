@@ -79,7 +79,7 @@ the test above shows that the p-value is 0.000116 which is less than 0.05. This 
 
 ## Conclusions
 
-  
+  The data shows that the averege number of drinks IS different between at least two rows. We found that the p-value was smaller than 0.05 therefore we must reject H0. In the box plot and the fav stats test it also shows that the highest number of people who drink was in the middle row more than the ither two rows. 
   
   
   
