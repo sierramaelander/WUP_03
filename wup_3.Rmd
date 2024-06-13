@@ -42,18 +42,46 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```{r}
 basicCN + geom_boxplot()
 ```
-  
-  
+
 ### get fancy  
 
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+
+  Shown in the box plots there are a higher amount of students that sit in the middle that drink alcohol.
+  
+
+
+
+
 ## Numerical Summarys 
+
+
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+The fav stats test shows that there is a high number of studets that sit in the middle more than the front or back (89)  
+
 
 ## Inferential Tests
 
+
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+the test above shows that the p-value is 0.000116 which is less than 0.05. This means we must reject the null hypothesis.
+
+
+
 ## Conclusions
 
-
+  
+  
+  
+  
+  
+  
