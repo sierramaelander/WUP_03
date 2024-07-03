@@ -50,7 +50,7 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 ```
 
 
-  Shown in the box plots there are a higher amount of students that sit in the middle that drink alcohol.
+  Shown in the box plots there are a higher amount of students that sit in the back that drink the most alcohol.
   
 
 
@@ -60,12 +60,14 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 
 
 ```{r}
-favstats(alcohol~Seat,data=ucdavis1)
+favstats(alcohol~Seat,data=davisdata)
 ```
-The fav stats test shows that there is a high number of studets that sit in the middle more than the front or back (89)  
+   
+The fave stats test shows that there is a high number of students that sit in   the back more than the front or middle(median is 3.5)  
 
 
 ## Inferential Tests
+
 
 
 ```{r}
@@ -73,14 +75,11 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 
-the test above shows that the p-value is 0.000116 which is less than 0.05. This means we must reject the null hypothesis.
-
-
+The data above shows that the p value is 0.000116 which is less than 0.05 this means we must reject H0 
 
 ## Conclusions
 
-  The data shows that the averege number of drinks IS different between at least two rows. We found that the p-value was smaller than 0.05 therefore we must reject H0. In the box plot and the fav stats test it also shows that the highest number of people who drink was in the middle row more than the ither two rows. 
-  
+In conclusion the average number drinks is different between at least two rows. This is shown because the p-value in the Anova test is 0.000116 this means we must reject H0 
   
   
   
